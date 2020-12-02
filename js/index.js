@@ -36,6 +36,23 @@ document.addEventListener('keydown', function (event){
     }
 });
 
+//Keypress
+document.addEventListener('keypress', function (event){
+    if(event.key === "w"){
+        logoHeading.style.color = '#ffffff';
+        navLinks[0].style.color = '#ffffff';
+        navLinks[1].style.color = '#ffffff';
+        navLinks[2].style.color = '#ffffff';
+        navLinks[3].style.color = '#ffffff';
+        introHeader.style.color = '#ffffff';
+        contentSecA.style.color = '#ffffff';
+        contentSecB.style.color = '#ffffff';
+        contentSecC.style.color = '#ffffff';
+        contentSecD.style.color = '#ffffff';
+        footerText[9].style.color = '#ffffff';
+    }
+});
+
 //Wheel
 document.addEventListener('wheel', function (event){
     logoHeading.style.color = '#ff0000';
@@ -64,6 +81,21 @@ document.addEventListener('dblclick', function (event){
     contentSecC.style.color = '#ff00ff';
     contentSecD.style.color = '#ff00ff';
     footerText[9].style.color = '#ff00ff';
+});
+
+//VolChange
+document.addEventListener('auxclick', function (event){
+    logoHeading.style.color = '#ffff00';
+    navLinks[0].style.color = '#ffff00';
+    navLinks[1].style.color = '#ffff00';
+    navLinks[2].style.color = '#ffff00';
+    navLinks[3].style.color = '#ffff00';
+    introHeader.style.color = '#ffff00';
+    contentSecA.style.color = '#ffff00';
+    contentSecB.style.color = '#ffff00';
+    contentSecC.style.color = '#ffff00';
+    contentSecD.style.color = '#ffff00';
+    footerText[9].style.color = '#ffff00';
 });
 
 //Mouse over and out
