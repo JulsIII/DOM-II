@@ -53,6 +53,21 @@ document.addEventListener('keypress', function (event){
     }
 });
 
+//Contextmenu
+document.addEventListener('contextmenu', function (event){
+    logoHeading.style.color = 'orange';
+    navLinks[0].style.color = 'orange';
+    navLinks[1].style.color = 'orange';
+    navLinks[2].style.color = 'orange';
+    navLinks[3].style.color = 'orange';
+    introHeader.style.color = 'orange';
+    contentSecA.style.color = 'orange';
+    contentSecB.style.color = 'orange';
+    contentSecC.style.color = 'orange';
+    contentSecD.style.color = 'orange';
+    footerText[9].style.color = 'orange';
+});
+
 //Wheel
 document.addEventListener('wheel', function (event){
     logoHeading.style.color = '#ff0000';
@@ -100,7 +115,7 @@ document.addEventListener('auxclick', function (event){
 
 //Key Up
 document.addEventListener('keyup', function (event){
-    if(event.key === "ee"){
+    if(event.key === "e"){
     logoHeading.style.color = 'pink';
     navLinks[0].style.color = 'pink';
     navLinks[1].style.color = 'pink';
