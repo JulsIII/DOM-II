@@ -6,7 +6,7 @@ const logoHeading = document.querySelector(".logo-heading");
 const navMain = document.querySelector('nav');
 const navLinks = document.querySelectorAll("a");
 
-const homeContainer = document.querySelector(".container home");
+const homeContainer = document.querySelector(".home");
 const introHeader = document.querySelector(".intro");
 const contentSecA = document.querySelector(".content-section");
 const contentSecB = document.querySelector(".inverse-content");
@@ -17,6 +17,25 @@ const siteFooter = document.querySelector(".footer");
 const footerText = document.querySelectorAll("p");
 
 //Events
+
+//Reset Colors
+document.addEventListener('keydown', function (event){
+    if(event.key === "r"){
+        logoHeading.style.color = '#000000';
+        navLinks[0].style.color = '#000000';
+        navLinks[1].style.color = '#000000';
+        navLinks[2].style.color = '#000000';
+        navLinks[3].style.color = '#000000';
+        introHeader.style.color = '#000000';
+        contentSecA.style.color = '#000000';
+        contentSecB.style.color = '#000000';
+        contentSecC.style.color = '#000000';
+        contentSecD.style.color = '#000000';
+        footerText[9].style.color = '#000000';
+    }
+});
+
+
 logoHeading.addEventListener("mouseover", function (event) {
     logoHeading.style.color = '#00ff00';
     //console.log('ASDF');
