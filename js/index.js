@@ -19,6 +19,7 @@ const footerText = document.querySelectorAll("p");
 //Events
 
 //Reset Colors
+//Keydown
 document.addEventListener('keydown', function (event){
     if(event.key === "r"){
         logoHeading.style.color = '#000000';
@@ -35,7 +36,22 @@ document.addEventListener('keydown', function (event){
     }
 });
 
+//Wheel
+document.addEventListener('wheel', function (event){
+    logoHeading.style.color = '#ff0000';
+    navLinks[0].style.color = '#ff0000';
+    navLinks[1].style.color = '#ff0000';
+    navLinks[2].style.color = '#ff0000';
+    navLinks[3].style.color = '#ff0000';
+    introHeader.style.color = '#ff0000';
+    contentSecA.style.color = '#ff0000';
+    contentSecB.style.color = '#ff0000';
+    contentSecC.style.color = '#ff0000';
+    contentSecD.style.color = '#ff0000';
+    footerText[9].style.color = '#ff0000';
+});
 
+//Mouse over and out
 logoHeading.addEventListener("mouseover", function (event) {
     logoHeading.style.color = '#00ff00';
     //console.log('ASDF');
