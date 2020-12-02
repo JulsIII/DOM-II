@@ -1,4 +1,3 @@
-// Your code goes here
 //Selectors
 const mainNavHeader = document.querySelector(".main-navigation");
 const navContainer = document.querySelector(".nav-container");
@@ -17,7 +16,6 @@ const siteFooter = document.querySelector(".footer");
 const footerText = document.querySelectorAll("p");
 
 //Events
-
 //Reset Colors
 //Keydown
 document.addEventListener('keydown', function (event){
