@@ -83,7 +83,7 @@ document.addEventListener('dblclick', function (event){
     footerText[9].style.color = '#ff00ff';
 });
 
-//VolChange
+//Aux Click
 document.addEventListener('auxclick', function (event){
     logoHeading.style.color = '#ffff00';
     navLinks[0].style.color = '#ffff00';
@@ -98,13 +98,17 @@ document.addEventListener('auxclick', function (event){
     footerText[9].style.color = '#ffff00';
 });
 
-//Mouse over and out
+//Mouse over, out and click
 logoHeading.addEventListener("mouseover", function (event) {
     logoHeading.style.color = '#00ff00';
     //console.log('ASDF');
    });
 logoHeading.addEventListener("mouseout", function (event) {
     logoHeading.style.color = '#0000ff';
+    //console.log('ASDF');
+   });
+logoHeading.addEventListener("click", function (event) {
+    logoHeading.style.color = 'cyan';
     //console.log('ASDF');
    });
 
@@ -117,6 +121,12 @@ navLinks[0].addEventListener("mouseout", function (event) {
     navLinks[0].style.color = '#0000ff';
     console.log('ASDF');
    });
+navLinks[0].addEventListener("click", function (event) {
+    navLinks[0].style.color = 'cyan';
+    console.log('ASDF');
+   });
+
+
 navLinks[1].addEventListener("mouseover", function (event) {
     navLinks[1].style.color = '#00ff00';
     console.log('ASDF');
@@ -125,6 +135,12 @@ navLinks[1].addEventListener("mouseout", function (event) {
     navLinks[1].style.color = '#0000ff';
     console.log('ASDF');
    });
+navLinks[1].addEventListener("click", function (event) {
+    navLinks[1].style.color = 'cyan';
+    console.log('ASDF');
+   });
+
+
 navLinks[2].addEventListener("mouseover", function (event) {
     navLinks[2].style.color = '#00ff00';
     console.log('ASDF');
@@ -133,6 +149,11 @@ navLinks[2].addEventListener("mouseout", function (event) {
     navLinks[2].style.color = '#0000ff';
     console.log('ASDF');
    });
+navLinks[2].addEventListener("click", function (event) {
+    navLinks[2].style.color = 'cyan';
+    console.log('ASDF');
+   });   
+
 navLinks[3].addEventListener("mouseover", function (event) {
     navLinks[3].style.color = '#00ff00';
     console.log('ASDF');
@@ -141,6 +162,11 @@ navLinks[3].addEventListener("mouseout", function (event) {
     navLinks[3].style.color = '#0000ff';
     console.log('ASDF');
    });
+navLinks[3].addEventListener("click", function (event) {
+    navLinks[3].style.color = 'cyan';
+    console.log('ASDF');
+   });
+
 introHeader.addEventListener("mouseover", function (event) {
     introHeader.style.color = '#00ff00';
     console.log('ASDF');
@@ -149,16 +175,20 @@ introHeader.addEventListener("mouseout", function (event) {
     introHeader.style.color = '#0000ff';
     console.log('ASDF');
    });
-
-
-introHeader.addEventListener("mouseover", function (event) {
-    introHeader.style.color = '#00ff00';
+introHeader.addEventListener("click", function (event) {
+    introHeader.style.color = 'cyan';
     console.log('ASDF');
    });
-introHeader.addEventListener("mouseout", function (event) {
-    introHeader.style.color = '#0000ff';
-    console.log('ASDF');
-   });
+
+
+// introHeader.addEventListener("mouseover", function (event) {
+//     introHeader.style.color = '#00ff00';
+//     console.log('ASDF');
+//    });
+// introHeader.addEventListener("mouseout", function (event) {
+//     introHeader.style.color = '#0000ff';
+//     console.log('ASDF');
+//    });
 
 
 contentSecA.addEventListener("mouseover", function (event) {
@@ -169,6 +199,11 @@ contentSecA.addEventListener("mouseout", function (event) {
     contentSecA.style.color = '#0000ff';
     console.log('ASDF');
    });
+contentSecA.addEventListener("click", function (event) {
+    contentSecA.style.color = 'cyan';
+    console.log('ASDF');
+   });
+
 
 contentSecB.addEventListener("mouseover", function (event) {
     contentSecB.style.color = '#00ff00';
@@ -176,6 +211,10 @@ contentSecB.addEventListener("mouseover", function (event) {
    });
 contentSecB.addEventListener("mouseout", function (event) {
     contentSecB.style.color = '#0000ff';
+    console.log('ASDF');
+   });
+contentSecB.addEventListener("click", function (event) {
+    contentSecB.style.color = 'cyan';
     console.log('ASDF');
    });
 
@@ -187,6 +226,10 @@ contentSecC.addEventListener("mouseout", function (event) {
     contentSecC.style.color = '#0000ff';
     console.log('ASDF');
    });
+contentSecC.addEventListener("click", function (event) {
+    contentSecC.style.color = 'cyan';
+    console.log('ASDF');
+   });
 
 contentSecD.addEventListener("mouseover", function (event) {
     contentSecD.style.color = '#00ff00';
@@ -194,6 +237,10 @@ contentSecD.addEventListener("mouseover", function (event) {
    });
 contentSecD.addEventListener("mouseout", function (event) {
     contentSecD.style.color = '#0000ff';
+    console.log('ASDF');
+   });
+contentSecD.addEventListener("click", function (event) {
+    contentSecD.style.color = 'cyan';
     console.log('ASDF');
    });
 
@@ -205,7 +252,10 @@ footerText[9].addEventListener("mouseout", function (event) {
     footerText[9].style.color = '#0000ff';
     console.log('ASDFAAAA');
    });
-
+footerText[9].addEventListener("click", function (event) {
+    footerText[9].style.color = 'cyan';
+    console.log('ASDFAAAA');
+   });
 
 
 
