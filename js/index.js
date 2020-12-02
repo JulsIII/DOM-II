@@ -68,8 +68,8 @@ document.addEventListener('contextmenu', function (event){
     footerText[9].style.color = 'orange';
 });
 
-//Wheel
-document.addEventListener('wheel', function (event){
+//Scroll
+document.addEventListener('scroll', function (event){
     logoHeading.style.color = '#ff0000';
     navLinks[0].style.color = '#ff0000';
     navLinks[1].style.color = '#ff0000';
@@ -81,6 +81,37 @@ document.addEventListener('wheel', function (event){
     contentSecC.style.color = '#ff0000';
     contentSecD.style.color = '#ff0000';
     footerText[9].style.color = '#ff0000';
+});
+
+//Wheel 
+document.addEventListener('wheel', function (event){
+    logoHeading.style.color = '#fff000';
+    navLinks[0].style.color = '#fff000';
+    navLinks[1].style.color = '#fff000';
+    navLinks[2].style.color = '#fff000';
+    navLinks[3].style.color = '#fff000';
+    introHeader.style.color = '#fff000';
+    contentSecA.style.color = '#fff000';
+    contentSecB.style.color = '#fff000';
+    contentSecC.style.color = '#fff000';
+    contentSecD.style.color = '#fff000';
+    footerText[9].style.color = '#ffff00';
+});
+
+//Wheel B Stopped Propagation()
+document.addEventListener('wheel', function (event){
+    logoHeading.style.color = '#fff000';
+    navLinks[0].style.color = '#fff000';
+    navLinks[1].style.color = '#fff000';
+    navLinks[2].style.color = '#fff000';
+    navLinks[3].style.color = '#fff000';
+    introHeader.style.color = '#fff000';
+    contentSecA.style.color = '#fff000';
+    contentSecB.style.color = '#fff000';
+    contentSecC.style.color = '#fff000';
+    contentSecD.style.color = '#fff000';
+    footerText[9].style.color = '#fff000';
+    event.stopPropagation();
 });
 
 //DBLClick
@@ -130,7 +161,7 @@ document.addEventListener('keyup', function (event){
     };
 });
 
-//Mouse over, out and click
+//Mouse over, out and click (AND event.preventDefault();)
 logoHeading.addEventListener("mouseover", function (event) {
     logoHeading.style.color = '#00ff00';
     //console.log('ASDF');
@@ -147,162 +178,109 @@ logoHeading.addEventListener("click", function (event) {
 
 navLinks[0].addEventListener("mouseover", function (event) {
     navLinks[0].style.color = '#00ff00';
-    console.log('ASDF');
    });
 navLinks[0].addEventListener("mouseout", function (event) {
     navLinks[0].style.color = '#0000ff';
-    console.log('ASDF');
    });
 navLinks[0].addEventListener("click", function (event) {
     navLinks[0].style.color = 'cyan';
-    console.log('ASDF');
+    event.preventDefault();
    });
 
 
 navLinks[1].addEventListener("mouseover", function (event) {
     navLinks[1].style.color = '#00ff00';
-    console.log('ASDF');
    });
 navLinks[1].addEventListener("mouseout", function (event) {
     navLinks[1].style.color = '#0000ff';
-    console.log('ASDF');
    });
 navLinks[1].addEventListener("click", function (event) {
     navLinks[1].style.color = 'cyan';
-    console.log('ASDF');
+    event.preventDefault();
    });
 
 
 navLinks[2].addEventListener("mouseover", function (event) {
     navLinks[2].style.color = '#00ff00';
-    console.log('ASDF');
    });
 navLinks[2].addEventListener("mouseout", function (event) {
     navLinks[2].style.color = '#0000ff';
-    console.log('ASDF');
    });
 navLinks[2].addEventListener("click", function (event) {
     navLinks[2].style.color = 'cyan';
-    console.log('ASDF');
+    event.preventDefault();
    });   
 
 navLinks[3].addEventListener("mouseover", function (event) {
     navLinks[3].style.color = '#00ff00';
-    console.log('ASDF');
    });
 navLinks[3].addEventListener("mouseout", function (event) {
     navLinks[3].style.color = '#0000ff';
-    console.log('ASDF');
    });
 navLinks[3].addEventListener("click", function (event) {
     navLinks[3].style.color = 'cyan';
-    console.log('ASDF');
+    event.preventDefault();
    });
 
 introHeader.addEventListener("mouseover", function (event) {
     introHeader.style.color = '#00ff00';
-    console.log('ASDF');
    });
 introHeader.addEventListener("mouseout", function (event) {
     introHeader.style.color = '#0000ff';
-    console.log('ASDF');
    });
 introHeader.addEventListener("click", function (event) {
     introHeader.style.color = 'cyan';
-    console.log('ASDF');
    });
-
-
-// introHeader.addEventListener("mouseover", function (event) {
-//     introHeader.style.color = '#00ff00';
-//     console.log('ASDF');
-//    });
-// introHeader.addEventListener("mouseout", function (event) {
-//     introHeader.style.color = '#0000ff';
-//     console.log('ASDF');
-//    });
 
 
 contentSecA.addEventListener("mouseover", function (event) {
     contentSecA.style.color = '#00ff00';
-    console.log('ASDF');
    });
 contentSecA.addEventListener("mouseout", function (event) {
     contentSecA.style.color = '#0000ff';
-    console.log('ASDF');
    });
 contentSecA.addEventListener("click", function (event) {
     contentSecA.style.color = 'cyan';
-    console.log('ASDF');
    });
 
 
 contentSecB.addEventListener("mouseover", function (event) {
     contentSecB.style.color = '#00ff00';
-    console.log('ASDF');
    });
 contentSecB.addEventListener("mouseout", function (event) {
     contentSecB.style.color = '#0000ff';
-    console.log('ASDF');
    });
 contentSecB.addEventListener("click", function (event) {
     contentSecB.style.color = 'cyan';
-    console.log('ASDF');
    });
 
 contentSecC.addEventListener("mouseover", function (event) {
     contentSecC.style.color = '#00ff00';
-    console.log('ASDF');
    });
 contentSecC.addEventListener("mouseout", function (event) {
     contentSecC.style.color = '#0000ff';
-    console.log('ASDF');
    });
 contentSecC.addEventListener("click", function (event) {
     contentSecC.style.color = 'cyan';
-    console.log('ASDF');
    });
 
 contentSecD.addEventListener("mouseover", function (event) {
     contentSecD.style.color = '#00ff00';
-    console.log('ASDF');
    });
 contentSecD.addEventListener("mouseout", function (event) {
     contentSecD.style.color = '#0000ff';
-    console.log('ASDF');
    });
 contentSecD.addEventListener("click", function (event) {
     contentSecD.style.color = 'cyan';
-    console.log('ASDF');
    });
 
 footerText[9].addEventListener("mouseover", function (event) {
     footerText[9].style.color = '#00ff00';
-    console.log('ASDFAAAAA');
    });
 footerText[9].addEventListener("mouseout", function (event) {
     footerText[9].style.color = '#0000ff';
-    console.log('ASDFAAAA');
    });
 footerText[9].addEventListener("click", function (event) {
     footerText[9].style.color = 'cyan';
-    console.log('ASDFAAAA');
    });
 
-
-
-
-
-//     //if (event.target === launchButton) {
-//     } //else {
-//     //}
-// p {
-//     animation-duration: 3s;
-//     animation-name: slidein;
-//   }
-  
-//   @keyframes slidein {
-//     from {
-//       margin-left: 100%;
-//       width: 300%; 
-//     }
