@@ -98,6 +98,23 @@ document.addEventListener('auxclick', function (event){
     footerText[9].style.color = '#ffff00';
 });
 
+//Key Up
+document.addEventListener('keyup', function (event){
+    if(event.key === "ee"){
+    logoHeading.style.color = 'pink';
+    navLinks[0].style.color = 'pink';
+    navLinks[1].style.color = 'pink';
+    navLinks[2].style.color = 'pink';
+    navLinks[3].style.color = 'pink';
+    introHeader.style.color = 'pink';
+    contentSecA.style.color = 'pink';
+    contentSecB.style.color = 'pink';
+    contentSecC.style.color = 'pink';
+    contentSecD.style.color = 'pink';
+    footerText[9].style.color = 'pink';
+    };
+});
+
 //Mouse over, out and click
 logoHeading.addEventListener("mouseover", function (event) {
     logoHeading.style.color = '#00ff00';
