@@ -51,6 +51,21 @@ document.addEventListener('wheel', function (event){
     footerText[9].style.color = '#ff0000';
 });
 
+//DBLClick
+document.addEventListener('dblclick', function (event){
+    logoHeading.style.color = '#ff00ff';
+    navLinks[0].style.color = '#ff00ff';
+    navLinks[1].style.color = '#ff00ff';
+    navLinks[2].style.color = '#ff00ff';
+    navLinks[3].style.color = '#ff00ff';
+    introHeader.style.color = '#ff00ff';
+    contentSecA.style.color = '#ff00ff';
+    contentSecB.style.color = '#ff00ff';
+    contentSecC.style.color = '#ff00ff';
+    contentSecD.style.color = '#ff00ff';
+    footerText[9].style.color = '#ff00ff';
+});
+
 //Mouse over and out
 logoHeading.addEventListener("mouseover", function (event) {
     logoHeading.style.color = '#00ff00';
